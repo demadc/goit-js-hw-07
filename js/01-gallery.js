@@ -20,8 +20,8 @@ galleryEls.addEventListener('click', onGalleryElsClick);
 
 // rendered elements
 
-function onCreateGalleryMarkup(galleryItems) {
-return galleryItems.map(({ preview, original, description }) => {
+function onCreateGalleryMarkup(items) {
+return items.map(({ preview, original, description }) => {
     return `<li class="gallery__item">
         <a class="gallery__link" href="${original}">
           <img
