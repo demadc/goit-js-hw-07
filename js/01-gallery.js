@@ -41,9 +41,7 @@ function onGalleryElsClick (evt) {
     evt.preventDefault();
 
 // create modal
-    if (evt.target.nodeName !== "IMG") 
-    return;
-
+  
     const isItemImage = evt.target.classList.contains('gallery__image');
      if (!isItemImage) 
      return;
